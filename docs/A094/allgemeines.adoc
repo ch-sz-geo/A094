@@ -1,35 +1,50 @@
-== Allgemeines TEST
-=== Rechtliche Grundlagen
-//Todo Links und Anhänge definieren 
-Seit dem 1. Juli 2008 ist das Bundesgesetz über Geoinformation (GeoIG) in Kraft. Am 1. Juli 2012
-erfolgte die vollständige Inkraftsetzung des kantonalen Geoinformationsgesetzes (KGeoiG) [01]. Es hat
-zum Ziel, verbindliche Vorgaben für die Erfassung, Modellierung und den Austausch von Geodaten
-festzulegen. +
+== Vorwort 
+In diesem Benutzerhandbuch wird dokumentiert, wie der Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) im Kanton Schwyz aufgebaut ist. 
 
-Am 1. Januar 2013 trat die kantonale Verordnung über Geoinformation (KGeoiV) in Kraft [02]. Sie
-präzisiert das KGeoiG in fachlicher sowie technischer Hinsicht und führt im Anhang 1 „Katalog der
-Geobasisdaten des Bundesrechts mit Zuständigkeit beim Kanton“ und im Anhang 2 „Katalog der
-Geobasisdaten des kantonalen Rechts“. Darin werden die Fachstellen definiert, welche für die
-Ausarbeitung eines Geodatenmodells zuständig sind.
+.Es soll für den ÖREB-Kataster dargelegt werden:
+* auf welchen Rechtsgrundlagen er beruht; 
+* wer dafür zuständig ist; 
+* wie er technisch aufgebaut ist; 
+* wie der Betrieb organisiert ist; 
+* wie die Daten verarbeitet und nachgeführt werden sollen.
 
+Die Daten des ÖREB-Katasters bestehen aus Geodaten, Geometadaten, den Datenmodellen für die Geodaten und die rechtlichen Grundlagen, anhand derer die Geodaten erfasst wurden. Die Nachführung der einzelnen Themen im ÖREB-Kataster richtet sich nach der rechtlichen Grundlage und danach, ob eine Änderung eine rechtliche Vorwirkung entfacht. 
 
-===  Zweck des Dokuments
-Dieses Dokument beschreibt den Geobasisdatensatz
- 
-* Sondernutzungsplanung kommunal. +
+== Organisation
+=== Rechtsgrundlagen 
+Der ÖREB-Kataster ist ein gemeinsames Projekt von Bund und Kantonen.
 
-Dieser Geobasisdatensatz wurde bis zur ÖREB-Version 2 über das Datenmodell der kommunalen
-Nutzungsplanung geführt. Aufgrund der Tatsache, dass die Ausscheidung von rechtskräftigen
-Sondernutzungsplänen (nachfolgend Gestaltungsplan) über ein von der Nutzungsplanung
-abweichendes, unabhängiges Verfahren erfolgt, wurde dieses Thema aus der kommunalen
-Nutzungsplanung ausgelagert und über ein eigenes Datenmodell beschrieben. Diese Entkoppelung
-von der Nutzungsplanung erleichtert die Nachführung der Gestaltungspläne. +
+.Die gesetzlichen Grundlagen auf Bundesebene sind folgende:
+* Bundesgesetz über Geoinformation vom 5. Oktober 2007 (GeoIG, SR510.62); 
+* Verordnung über Geoinformation vom 21. Mai 2008 (GeoIV, SR510.620); 
+* Verordnung über den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen vom 2. September 2009 (ÖREBKV, SR510.622.4).
 
-Der Geobasisdatensatz ist Bestandteil des ÖREB-Katasters. +
+.Auf kantonaler Ebene sind folgende Regelungen relevant:
+* Kantonales Geoinformationsgesetz vom 24. Juni 2010 (KGeoiG, SRSZ214.110); 
+* Verordnung zu kantonalen Geoinformationsgesetzt vom 18. Dezember 2012 (KGeoiV, SRSZ214.111); 
+* Verordnung über den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen vom 19. September 2017 (KÖREBKV, SRSZ214.113).
 
-Diese Dokumentation richtet sich an Behörden und Fachleute des Kantons und der Gemeinden sowie
-an private Planungsbüros und GIS-Dienstleister, welche sich mit der Bearbeitung von Geobasisdaten
-zu Gestaltungsplänen befassen. +
+Durch die Swisstopo wurden zudem verschiedene Weisungen erstellt, damit der ÖREB-Kataster schweizweit einheitlich erscheint. Diese findet man im Handbuch «ÖREB-Kataster», das auf der Webseite www.cadastre.ch zu finden ist. Von Interesse sind insbesondere folgende Weisungen:
+
+.Strategisch
+* «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2020–2023» gültig ab 1. Januar 2020 für vier Jahre. 
+* «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2020–2023: Massnamenplan» gültig ab 1. Januar 2020 für vier Jahre. +
+
+.Inhaltlich und technisch
+* «ÖREB-Kataster: Rechtsvorschriften, gesetzliche Grundlagen und Zusatzinformationen» vom 1. August 2021 (Stand vom 7. Juli 2021). 
+* «ÖREB-Kataster: Inhalt und Darstellung des statischen Auszugs» vom 1. November 2017 (Stand am 25. August 2022). 
+* «ÖREB-Kataster: DATA-Extract» vom 1. November 2017 (Stand am 25. August 2022). 
+* «ÖREB-Kataster: ÖREB-Webservice (Aufruf eines Auszugs) vom 1. November 2017 (Stand am 25. August 2022). 
+* «Rahmenmodell für den ÖREB-Kataster: Erläuterungen für die Umsetzung» vom 1. Februar 2011 (Stand am 25. August 2022). 
+
+=== Katasterverantwortliche Stelle (KVS)
+Das Amt für Geoinformation (AGI) wurde vom Regierungsrat zur katasterverantwortlichen Stelle bestimmt. Zu den Aufgaben der KVS gehören die Integration der Daten in den Kataster, welche von den zuständigen Stellen an das AGI weitergegeben werden. Zudem werden die gesetzlichen Grundlagen mit den Geodaten im Auftrag der zuständigen Stelle verknüpft. Die Inhalte des Katsterns sind als statischer und dynamischer Auszug im WebGIS abrufbar.
+
+=== Zuständige Stelle für die Bereitstellung der Daten
+Im ÖREB-Kataster werden verschiedene ÖREB (Themen) abgebildet. Für die verschiedenen Themen sind unterschiedliche Amtsstellen zuständig. Die Details dazu können dem Anhang der KGeoiV entnommen werden. Die zuständigen Amtsstellen müssen in den Einführungs- und Nachführungsprozess eingebunden werden.
+
+=== Staatskanzlei
+Die Änderungen in den gesetzlichen Grundlagen meldet die Staatskanzlei der katasterverantwortlichen Stelle. Die KVS verwaltet wiederum für die Staatskanzlei die gesetzlichen Grundlagen im Rahmenmodell.
 
 ifdef::backend-pdf[]
 <<<
