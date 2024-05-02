@@ -1,6 +1,6 @@
 // Hier den Titel eingeben
 :title: ÖREB-Handbuch 
-:subtitle: A094
+:subtitle: Amt für Geoinformation Kanton Schwyz
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
