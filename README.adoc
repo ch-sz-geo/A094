@@ -1,7 +1,7 @@
 // Erklärung und Link auf Website
 ifdef::env-github[]
 [discrete]
-== Modelldokumentation
-Die ganze Oereb-Handbuch befindet sich unter folgendem Link:
+== ÖREB-Handbuch
+Das ÖREB-Handbuch befindet sich unter folgendem Link:
 https://ch-sz-geo.github.io/A094/oereb-handbuch.html[Oereb-Handbuch]
 endif::[]
