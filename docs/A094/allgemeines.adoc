@@ -16,9 +16,6 @@ Die Daten des ÖREB-Katasters bestehen aus Geodaten, Geometadaten, den Datenmode
 === Rechtsgrundlagen 
 Der ÖREB-Kataster ist ein gemeinsames Projekt von Bund und Kantonen.
 
-.Das ist ein Testbild
-image::../img/oereb_logo.jpg[width=50%]
-
 .Die gesetzlichen Grundlagen auf Bundesebene sind folgende:
 * Bundesgesetz über Geoinformation vom 5. Oktober 2007 (GeoIG, SR510.62); 
 * Verordnung über Geoinformation vom 21. Mai 2008 (GeoIV, SR510.620); 
@@ -71,8 +68,8 @@ Im Kanton Schwyz wurde der ÖREB-Kataster ins WebGIS eingebaut. Damit dient GeoM
 ÖREB existieren auf den verschiedenen föderalen Ebenen (Bund, Kanton, Gemeinden). Die Geodaten dazu müssen je nach Ebene unterschiedlich behandelt werden:
 
 * Geodaten vom Bund können zentral über data.geo.admin.ch bezogen und ins System eingebunden werden.  
-* Geodaten vom Kanton werden von der zuständigen kantonalen Fachstelle aufbereitet. Bevor sie publiziert werden, müssen die Daten auf Vollständigkeit und Konsistenz geprüft werden.
-* Geodaten der Gemeinden müssen erst zusammengeführt und bereinigt werden. Man spricht von Datenintegration. Allfällige Lücken oder Überlagerungen in den Daten müssen behoben werden. Dies kann in der Regel nicht vollständig zentral erfolgen. 
+* Geodaten vom Kanton werden von der zuständigen kantonalen Fachstelle aufbereitet. Bevor sie publiziert werden, müssen die Daten auf Vollständigkeit und Konsistenz geprüft werden. data.geo.sz.ch
+* Geodaten der Gemeinden müssen erst zusammengeführt und bereinigt werden. Man spricht von Datenintegration. Allfällige Lücken oder Überlagerungen in den Daten müssen behoben werden. Dies kann in der Regel nicht vollständig zentral erfolgen. data.geo.sz.ch
 
 == Durchführung und Überwachung des Betriebs
 === Entwicklungs-, Test- und Produktionssystem
@@ -138,6 +135,9 @@ Die neue Darstellung wird zuerst auf dem Testsystem geprüft. Nur bei erfolgreic
 
 === Nachführung der ÖREB-Daten im Allgemeinen
 ==== Generelles Vorgehen
+
+.gerelles Vorgehen beim Nachführungsprozess
+image::../img/nachfuehrung_generelles_vorgehen.jpg[scaledwidth=100%,align="center"]
 Eine Nachführung der Geodaten kann ereignisbezogen ausgelöst werden oder periodisch erfolgen. In beiden Fällen löst die zuständige Amtsstelle die Nachführung aus. Sie liefert der KVS den Änderungsdatensatz. Die KVS nimmt die Daten entgegen, registriert und prüft sie. Geprüft werden Datenkonsistenz und Modellkonformität. Wenn die Daten Fehler aufweisen, müssen sie durch die zuständige Stelle bereinigt werden.
 
 Die geänderten Geodaten werden in jedem Fall vor der Veröffentlichung auf dem Testsystem nochmals geprüft. Die Geometadaten werden für die Publikation vorbereitet.
@@ -183,6 +183,88 @@ Die Themen vom Bund werden als Dienst in den ÖREB-Kataster eingebunden. Sofern 
 * Kataster der belasteten Standorte im Bereich des öffentlichen Verkehrs (ID 119)
 * Projektierungszonen Leitungen mit einer Nennspannung von 220 kV oder höher (ID 217)
 * Baulinien Starkstromanlagen (ID 218)
+
+==== Nutzungsplanung (ID 73) 
+* Nutzungsplanung kantonal (Siedlung) (ID 73) 
+* Nutzungsplanung kantonal (Strassen) (ID 73B)
+* Nutzungsplanung kantonal (Natur- und Heimatschutz) (ID 73C) 
+* Nutzungsplanung kommunal (ID 73D)
+
+.Nachführungsprozess ist in Ausarbeitung (im Miro Board dokumentiert):
+https://miro.com/app/board/o9J_lu8t5yE=/?moveToWidget=3458764518174132813&cot=14[Miro-Board: Nachführungsprozess]
+
+==== Planungszonen (ID 76)
+* Planungszonen kantonal (Siedlung) (ID 76A)
+* Planungszonen kantonal (Strassen) (ID 76B) 
+* Planungszonen kantonal (Natur- und Heimatschutz) (ID 76C) 
+* Planungszonen kommunal (ID 76D)
+
+Die Festlegung erfolgt durch das Departement. In diesen Gebieten darf nicht unternommen werden, was die Nutzungplanung erschwert (eine Vorwirkung entfacht). Die Planungszonen erlöschen i. d. R. nach drei Jahren, spätenstens nach fünf Jahren. Es bestehen Einsprache- und Beschwerdemöglichkeiten.
+
+==== Kataster der belasteten Standorte (ID 116) 
+Für das Thema besteht keine Auflagepflicht.  
+Das Thema wird mit einem automatisierten Prozess täglich aktualisiert.
+
+==== Grundwasserschutzzonen (ID 131)
+Auflage (30 Tage), initiiert durch die Gemeinde. Einsprache- und Beschwerdemöglichkeit.
+Durch die Beschwerde kann es zu einer Wiederholung der Auflage kommen. Aus Sicht der KVS wird dann die ursprüngliche Änderung verworfen und der Nachführungsprozess mit einer neuen Änderung neu gestartet.
+
+==== Grundwasserschutzareale (ID 132)
+. Anhörung verschiedener Beteiligter (Gemeinden, Wasserversorgung, Grundeigentümer).
+. Auflage (30 Tage), initiiert durch den Kanton (AfU). Einsprache- und Beschwerdemöglichkeit.
+. Departement setzt die Änderung als Verfügung in Kraft.
+.. Diese kann juristisch während einer bestimmten Frist noch angefochten werden.
+.. Die Frist kann abgelaufen sein, jedoch das juristische Verfahren noch hängig sein.
+
+==== Lärmempfindlichkeitsstufen (ID 145)
+Die Lärmempfindlichkeitsstufen werden als Teil der kommunalen Nutzungspläne genehmigt. 
+
+==== Statische Waldgrenzen (ID 157)
+Periodische Nachführung beim Erlass des Zonenplans, Nutzungsplans oder bei Baubewilligung, falls erforderlich. Individuelle Nachführung auf Gesuch hin.
+
+. Stellungnahme bei Gemeinderäten. 
+. Auflageverfahren (30 Tage) mit Einsprache während der Auflage. 
+
+==== Waldabstandslinien (ID 159)
+Der Waldabstand wird aus den Waldgrenzen bestimmt. Die Festlegung erfolgt gemeinsam mit dem Verfahren zur statischen Waldgrenzen.
+
+==== Waldreservate (ID 160)
+. Einbeziehung der Öffentlichkeit bei der Planung 
+. Öffentliche Auflage (30 Tage) mit der Möglichkeit zur Stellungnahme.
+. Erlass durch den Regierungsrat.
+
+==== Gewässerraum (ID 190)
+. Gewässerraum (allgemein) (ID 190A) 
+. Gewässerraum in kantonalen Nutzungsplänen (Natur- und Heimatschutz) (ID 190B) 
+. Gewässerraum in kantonalen Nutzungsplänen (Siedlung) (ID 190C) 
+. Gewässerraum in kantonalen Nutzungsplänen (Strassen) (ID 190D)
+
+Die Nachführung des Gewässerraums erfolgt mit der Nachführung der Nutzungsplanung.
+
+=== Nachführung der kantonalen Fachgesetzgebung
+LexFind bezieht die Gesetze und Verordnungen direkt von der Staatskanzlei. Die Daten werden täglich aktualisiert. Damit sind die verlinkten Gesetze immer aktuell.
+
+Die zuständige Stelle kontaktiert die KVS, falls eine Änderung es notwendig macht, dass sich die Verlinkung ändert. In diesem Fall wird gleichzeitig geprüft, ob eine Nachführung der Geodaten notwendig ist.
+
+== Supportorganisation 
+=== National
+Der Bund unterstützt während der Einführung des ÖREB-Katasters mit einer Supportorganisation die Koordination und den Informationsaustausch zwischen den Kantonen und dem Bund.
+
+* Jährliche Informationstagungen „ÖREB-Kataster“ 
+* Arbeitsgruppen 
+* Supportgruppen 
+* Schwergewichtsprojekte
+
+=== Kantonal
+Die katasterverantwortliche Stelle, das AGI, unterstützt die betroffenen Fachstellen aktiv bei der Umsetzung des Datenmodells und der Erhebung der Daten und Rechtsvorschriften.
+
+== Changemanagement
+=== National 
+Änderungen im Aufbau des ÖREB-Katasters – z.B. Anpassungen im Rahmenmodell, Ergänzungen in Weisungen, Anpassung ÖREBKV, usw. – werden durch den Bund initialisiert. Bei geänderten Weisungen werden die Kantone durch den Bund über deren Inkrafttreten informiert. Neue ÖREB-Themen und Änderungen in der ÖREBKV werden zuerst durch paritätisch zusammengestellte Arbeitsgruppen (abhängig vom Thema und beteiligten Stellen) erarbeitet. Danach erhalten die Kantone die Unterlagen zur Stellungnahme.
+
+=== Kantonal
+Die beteiligten Fachstellen melden ihre Erfahrungen bei der Umsetzung und Bedürfnisse dem AGI. Optimierungen im Datenmodell werden so rasch als möglich umgesetzt, insbesondere bei den Themen den kantonalen zuständigen Stellen. Die Erfahrungen der kantonalen Stellen für die weiteren ÖREB-Themen werden gesammelt und dann in definitive Richtlinien umgesetzt.
+
 
 ifdef::backend-pdf[]
 <<<
