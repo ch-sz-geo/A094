@@ -1,4 +1,4 @@
-== Allgemeines
+== Allgemeines TEST
 === Rechtliche Grundlagen
 //Todo Links und Anhänge definieren 
 Seit dem 1. Juli 2008 ist das Bundesgesetz über Geoinformation (GeoIG) in Kraft. Am 1. Juli 2012
