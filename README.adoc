@@ -2,6 +2,6 @@
 ifdef::env-github[]
 [discrete]
 == Modelldokumentation
-Die ganze Übersicht der Modelldokumentation befindet sich unter folgendem Link:
-https://ch-sz-geo.github.io/A000_entrypage/[Modelldokumentation Startseite]
+Die ganze Oereb-Handbuch befindet sich unter folgendem Link:
+https://ch-sz-geo.github.io/A094/oereb-handbuch.html[Oereb-Handbuch]
 endif::[]

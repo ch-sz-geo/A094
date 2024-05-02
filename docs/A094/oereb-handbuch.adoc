@@ -36,12 +36,7 @@ image:../../themes/logo_kt_sz_rgb.jpg[]
 [.subtitle]#{subtitle}# +
 
 ****
-
-* https://ch-sz-geo.github.io/A000_entrypage/[zur Startseite] +
-* https://amandawetter.github.io/A000_Rebuild/[Übersicht A000 Dokumentation] +
-* https://github.com/AmandaWetter/A000_Rebuild/tree/main/data[Übersicht Daten] +
-* https://github.com/AmandaWetter/A000_Rebuild/tree/main/models[Übersicht Modell] +
-* https://ch-sz-geo.github.io/A000_template/ebook.pdf[Dokumentation als Pdf] +
+* https://ch-sz-geo.github.io/A094/oereb-handbuch.pdf[Dokumentation als Pdf] +
 
 ****
 endif::[]
