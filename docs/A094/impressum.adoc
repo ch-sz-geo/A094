@@ -1,5 +1,14 @@
 [discrete]
 === Impressum
+.Herausgeber
+[%collapsible]
+====
+Katasterverantwortliche Stelle für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) des Kantons Schwyz +
+
+Amt für Geoinformation +
+Bahnhofstrasse 16 +
+6431 Schwyz +
+====
 
 .Erstellung
 [%collapsible]
