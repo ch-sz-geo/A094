@@ -1,5 +1,5 @@
 // Hier den Titel eingeben
-:title: Öreb-Handbuch 
+:title: ÖREB-Handbuch 
 :subtitle: A094
 ifdef::backend-pdf[]
 = {title}
@@ -43,6 +43,7 @@ endif::[]
 
 // Die Verwiese auf die Inhalte der Dokumentation sollen im README auf Github nicht angezeigt werden.
 ifndef::env-github[]
+include::./impressum.adoc[]
 include::./allgemeines.adoc[]
 endif::[]
 
