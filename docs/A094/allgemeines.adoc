@@ -24,14 +24,14 @@ Der ÖREB-Kataster ist ein gemeinsames Projekt von Bund und Kantonen.
 * Verordnung zu kantonalen Geoinformationsgesetzt vom 18. Dezember 2012 (KGeoiV, SRSZ214.111); 
 * Verordnung über den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen vom 19. September 2017 (KÖREBKV, SRSZ214.113).
 
-Durch die Swisstopo wurden zudem verschiedene Weisungen erstellt, damit der ÖREB-Kataster schweizweit einheitlich erscheint. Diese findet man im Handbuch «ÖREB-Kataster», das auf der Webseite www.cadastre.ch zu finden ist. Von Interesse sind insbesondere folgende Weisungen:
+Durch die Swisstopo wurden zudem verschiedene Weisungen erstellt, damit der ÖREB-Kataster schweizweit einheitlich erscheint. Die aktuellen Weisungen sind auf der Webseite https://www.cadastre-manual.admin.ch/de/oereb-weisungen-oereb-kataster[] abrufbar:
 
 .Strategisch
 * «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2020–2023» gültig ab 1. Januar 2020 für vier Jahre. 
 * «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2020–2023: Massnamenplan» gültig ab 1. Januar 2020 für vier Jahre. +
 
 .Inhaltlich und technisch
-* «ÖREB-Kataster: Rechtsvorschriften, gesetzliche Grundlagen und Zusatzinformationen» vom 1. August 2021 (Stand vom 7. Juli 2021). 
+* «ÖREB-Kataster: Rechtsvorschriften, gesetzliche Grundlagen und Zusatzinformationen» vom 1. August 2021 (Stand am 15. März 2023). 
 * «ÖREB-Kataster: Inhalt und Darstellung des statischen Auszugs» vom 1. November 2017 (Stand am 25. August 2022). 
 * «ÖREB-Kataster: DATA-Extract» vom 1. November 2017 (Stand am 25. August 2022). 
 * «ÖREB-Kataster: ÖREB-Webservice (Aufruf eines Auszugs) vom 1. November 2017 (Stand am 25. August 2022). 
@@ -45,6 +45,11 @@ Im ÖREB-Kataster werden verschiedene ÖREB (Themen) abgebildet. Für die versch
 
 === Staatskanzlei
 Die Änderungen in den gesetzlichen Grundlagen meldet die Staatskanzlei der katasterverantwortlichen Stelle. Die KVS verwaltet wiederum für die Staatskanzlei die gesetzlichen Grundlagen im Rahmenmodell.
+
+== Systemumgebung
+=== Architektur
+=== Komponenten
+===
 
 ifdef::backend-pdf[]
 <<<
