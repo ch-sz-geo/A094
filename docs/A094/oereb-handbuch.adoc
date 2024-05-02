@@ -48,9 +48,6 @@ endif::[]
 
 // Die Verwiese auf die Inhalte der Dokumentation sollen im README auf Github nicht angezeigt werden.
 ifndef::env-github[]
-include::./impressum.adoc[]
 include::./allgemeines.adoc[]
-include::./modellbeschreibung.adoc[]
-include::./diagramme.adoc[]
-include::./klassenbeschreibung.adoc[]
 endif::[]
+
