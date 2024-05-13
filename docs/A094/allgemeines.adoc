@@ -52,6 +52,9 @@ Die Änderungen in den gesetzlichen Grundlagen meldet die Staatskanzlei der kata
 === Architektur
 Die ÖREB-Kataster-Infrastruktur ist aus unterschiedlichen Modulen zusammengesetzt. Die Module wurden von verschiedenen Herstellern entwickelt. Soweit möglich werden Open-Source-Komponenten eingesetzt.
 
+.ÖREB Architktur (ÖREB-Daten und Fachdaten im WebGIS)
+image::../img/oereb_architektur.jpg[scaledwidth=100%,align="center"]
+
 === Komponenten
 ==== ÖREBlex
 Die Dokumentenverwaltung ist in die Komponenten ÖREBlex und Schnittstellen LexWork/LexFind untergliedert. Über ÖREBlex verwaltet die KVS alle Entscheide (Rechtsvorschriften) der kantonalen und kommunalen Themen. Die Erlasse (gesetzliche Grundlagen) hingegen werden über die zusätzlich beschaffte „Schnittstelle LexWork/LexFind“ automatisch integriert. Die Erlasse auf Stufe Bund werden durch die Bundeskanzlei und jene auf Stufe Kanton durch die Staatskanzlei in LexFind erfasst. Die Beziehung zwischen einer Eigentumsbeschränkung und ihren Dokumenten geschieht über den so genannten Geolink. 
