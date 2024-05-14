@@ -52,7 +52,7 @@ Die Änderungen in den gesetzlichen Grundlagen meldet die Staatskanzlei der kata
 === Architektur
 Die ÖREB-Kataster-Infrastruktur ist aus unterschiedlichen Modulen zusammengesetzt. Die Module wurden von verschiedenen Herstellern entwickelt. Soweit möglich werden Open-Source-Komponenten eingesetzt.
 
-.ÖREB Architktur (ÖREB-Daten und Fachdaten im WebGIS)
+.ÖREB Architektur (ÖREB-Daten und Fachdaten im WebGIS)
 image::../img/oereb_architektur.jpg[scaledwidth=100%,align="center"]
 
 === Komponenten
@@ -62,8 +62,11 @@ Die Dokumentenverwaltung ist in die Komponenten ÖREBlex und Schnittstellen LexW
 ==== ÖREB-Server
 Für die Funktionen des ÖREB-Katasters wird pyramid_oereb verwendet. Dies ist eine Softwarekomponente, die von rund 12 Kantonen gemeinsam entwickelt wird. Sie dient als ÖREB-Server. Diese zentrale Komponente verbindet die Grundstücksdaten mit den Daten mit Eigentumsbeschränkungen und mit den Daten über die rechtlichen Grundlagen. Daraus kann für jedes Grundstück die Information zu den ÖREB erstellt werden. Die Information wird als PDF angezeigt und lässt sich über MapFish Print drucken.
 
+==== ÖREB-Server Print
+Der ÖREB-Server Print (pyramid_oereb_mfp) ist eine Erweiterung des ÖREB-Servers (pyramid_oereb), die es ermöglicht, statische Auszüge im PDF-Format zu generieren. Diese Implementierung basiert auf MapFish-Print und erfordert die Installation von MapFish-Print, Java und das Hinzufügen von Schriftarten für den Druck.
+
 ==== ÖREB-Datenbank
-In der geoportal PostGIS Datenbank werden die Schemen der jeweiligen ÖREB-Themen geführt. 
+In der geoportal PostGIS Datenbank werden die Schemata der jeweiligen ÖREB-Themen geführt. 
 Die Datenstruktur entspricht einem mit ili2pg angelegten Schema und Tabellen. Für die Bereitstellung der Geowebdienste (WMS, WFS) werden zusätzlche Views angelegt.
 
 ==== WebGIS (GeoMapFish)
