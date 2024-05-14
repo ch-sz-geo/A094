@@ -197,8 +197,9 @@ Die Themen vom Bund werden als Dienst in den ÖREB-Kataster eingebunden. Sofern 
 * Nutzungsplanung kantonal (Strassen) (ID 73B)
 * Nutzungsplanung kantonal (Natur- und Heimatschutz) (ID 73C) 
 * Nutzungsplanung kommunal (ID 73D)
+* Sondernutzungspanung (Gestaltungsplan) (ID 73D)
 
-.Nachführungsprozess ist in Ausarbeitung (im Miro Board dokumentiert):
+.Nachführungsprozess im Miro Board dokumentiert:
 https://miro.com/app/board/o9J_lu8t5yE=/?moveToWidget=3458764518174132813&cot=14[Miro-Board: Nachführungsprozess]
 
 ==== Planungszonen (ID 76)
