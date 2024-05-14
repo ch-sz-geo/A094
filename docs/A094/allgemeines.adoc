@@ -63,6 +63,8 @@ Die Dokumentenverwaltung ist in die Komponenten ÖREBlex und Schnittstellen LexW
 Für die Funktionen des ÖREB-Katasters wird pyramid_oereb verwendet. Dies ist eine Softwarekomponente, die von rund 12 Kantonen gemeinsam entwickelt wird. Sie dient als ÖREB-Server. Diese zentrale Komponente verbindet die Grundstücksdaten mit den Daten mit Eigentumsbeschränkungen und mit den Daten über die rechtlichen Grundlagen. Daraus kann für jedes Grundstück die Information zu den ÖREB erstellt werden. Die Information wird als PDF angezeigt und lässt sich über MapFish Print drucken.
 
 ==== ÖREB-Datenbank
+In der geoportal PostGIS Datenbank werden die Schemen der jeweiligen ÖREB-Themen geführt. 
+Die Datenstruktur entspricht einem mit ili2pg angelegten Schema und Tabellen. Für die Bereitstellung der Geowebdienste (WMS, WFS) werden zusätzlche Views angelegt.
 
 ==== WebGIS (GeoMapFish)
 Im Kanton Schwyz wurde der ÖREB-Kataster ins WebGIS eingebaut. Damit dient GeoMapFish zusammen mit einem graphikfähigen Browser als Benutzeroberfläche und Datenviewer. Sämtliche Daten aus dem WebGIS können zusammen mit den ÖREB-Daten dargestellt werden.
