@@ -3,14 +3,14 @@ In diesem Benutzerhandbuch wird dokumentiert, wie der Kataster der öffentlich-r
 
 https://map.geo.sz.ch/s/tR6Lk5[Startseite des ÖREB-Katasters im Kanton Schwyz]
 
-.Es soll für den ÖREB-Kataster dargelegt werden:
+.Es wird für den ÖREB-Kataster dargelegt:
 * auf welchen Rechtsgrundlagen er beruht; 
 * wer dafür zuständig ist; 
 * wie er technisch aufgebaut ist; 
 * wie der Betrieb organisiert ist; 
 * wie die Daten verarbeitet und nachgeführt werden sollen.
 
-Die Daten des ÖREB-Katasters bestehen aus Geodaten, Geometadaten, den Datenmodellen für die Geodaten und die rechtlichen Grundlagen, anhand derer die Geodaten erfasst wurden. Die Nachführung der einzelnen Themen im ÖREB-Kataster richtet sich nach der rechtlichen Grundlage und danach, ob eine Änderung eine rechtliche Vorwirkung entfacht. 
+Die Daten des ÖREB-Katasters bestehen aus Geodaten, Geometadaten, den Datenmodellen für die Geodaten und die rechtlichen Grundlagen, anhand derer die Geodaten erfasst wurden. Die Geodaten beschreiben öffentlich-rechtliche Eigentumsbeschränkungen (ÖREB). Die Nachführung der einzelnen Themen im ÖREB-Kataster richtet sich nach der rechtlichen Grundlage und danach, ob eine Änderung eine rechtliche Vorwirkung entfacht. 
 
 == Organisation
 === Rechtsgrundlagen 
@@ -39,8 +39,8 @@ Durch die Swisstopo wurden zudem verschiedene Weisungen erstellt, damit der ÖRE
 * «ÖREB-Kataster: ÖREB-Webservice (Aufruf eines Auszugs) vom 1. November 2017 (Stand am 25. August 2022). 
 * «Rahmenmodell für den ÖREB-Kataster: Erläuterungen für die Umsetzung» vom 1. Februar 2011 (Stand am 25. August 2022). 
 
-=== Katasterverantwortliche Stelle (KVS)
-Das Amt für Geoinformation (AGI) wurde vom Regierungsrat zur katasterverantwortlichen Stelle bestimmt. Zu den Aufgaben der KVS gehören die Integration der Daten in den Kataster, welche von den zuständigen Stellen an das AGI weitergegeben werden. Zudem werden die gesetzlichen Grundlagen mit den Geodaten im Auftrag der zuständigen Stelle verknüpft. Die Inhalte des Katsterns sind als statischer und dynamischer Auszug im WebGIS abrufbar.
+=== Katasterverantwortliche Stelle
+Das Amt für Geoinformation (AGI) wurde vom Regierungsrat zur katasterverantwortlichen Stelle (KVS) bestimmt (§ 3 KÖREBKV). Zu den Aufgaben der KVS gehören die Integration der Daten in den Kataster, welche von den zuständigen Stellen an das AGI weitergegeben werden. Zudem werden die gesetzlichen Grundlagen mit den Geodaten im Auftrag der zuständigen Stelle verknüpft. Die Inhalte des Katasters sind als statischer und dynamischer Auszug im WebGIS abrufbar.
 
 === Zuständige Stelle für die Bereitstellung der Daten
 Im ÖREB-Kataster werden verschiedene ÖREB (Themen) abgebildet. Für die verschiedenen Themen sind unterschiedliche Amtsstellen zuständig. Die Details dazu können dem Anhang der KGeoiV entnommen werden. Die zuständigen Amtsstellen müssen in den Einführungs- und Nachführungsprozess eingebunden werden.
@@ -52,32 +52,32 @@ Die Änderungen in den gesetzlichen Grundlagen meldet die Staatskanzlei der kata
 === Architektur
 Die ÖREB-Kataster-Infrastruktur ist aus unterschiedlichen Modulen zusammengesetzt. Die Module wurden von verschiedenen Herstellern entwickelt. Soweit möglich werden Open-Source-Komponenten eingesetzt.
 
-.ÖREB Architektur (ÖREB-Daten und Fachdaten im WebGIS)
+.ÖREB-Kataster-Architektur (ÖREB-Daten und Fachdaten im WebGIS).
 image::../img/oereb_architektur.jpg[scaledwidth=100%,align="center"]
 
 === Komponenten
 ==== ÖREBlex
-Die Dokumentenverwaltung ist in die Komponenten ÖREBlex und Schnittstellen LexWork/LexFind untergliedert. Über ÖREBlex verwaltet die KVS alle Entscheide (Rechtsvorschriften) der kantonalen und kommunalen Themen. Die Erlasse (gesetzliche Grundlagen) hingegen werden über die zusätzlich beschaffte „Schnittstelle LexWork/LexFind“ automatisch integriert. Die Erlasse auf Stufe Bund werden durch die Bundeskanzlei und jene auf Stufe Kanton durch die Staatskanzlei in LexFind erfasst. Die Beziehung zwischen einer Eigentumsbeschränkung und ihren Dokumenten geschieht über den so genannten Geolink. 
+Die Dokumentenverwaltung ist in die Komponenten _ÖREBlex_ und Schnittstellen _LexWork/LexFind_ untergliedert. Über ÖREBlex verwaltet die KVS alle Entscheide (Rechtsvorschriften) der kantonalen und kommunalen Themen. Die Erlasse (gesetzliche Grundlagen) hingegen werden über die zusätzlich beschaffte „Schnittstelle LexWork/LexFind“ automatisch integriert. Die Erlasse auf Stufe Bund werden durch die Bundeskanzlei und jene auf Stufe Kanton durch die Staatskanzlei in _LexFind_ erfasst. Die Beziehung zwischen einer Eigentumsbeschränkung und ihren Dokumenten geschieht über den sogenannten Geolink. 
 
 ==== ÖREB-Server
-Für die Funktionen des ÖREB-Katasters wird pyramid_oereb verwendet. Dies ist eine Softwarekomponente, die von rund 12 Kantonen gemeinsam entwickelt wird. Sie dient als ÖREB-Server. Diese zentrale Komponente verbindet die Grundstücksdaten mit den Daten mit Eigentumsbeschränkungen und mit den Daten über die rechtlichen Grundlagen. Daraus kann für jedes Grundstück die Information zu den ÖREB erstellt werden. Die Information wird als PDF angezeigt und lässt sich über MapFish Print drucken.
+Für die Funktionen des ÖREB-Katasters wird _pyramid_oereb_ verwendet. Dies ist eine Softwarekomponente, die von rund 12 Kantonen gemeinsam entwickelt wird. Sie dient als ÖREB-Server. Diese zentrale Komponente verbindet die Grundstücksdaten mit den Daten mit Eigentumsbeschränkungen und mit den Daten über die rechtlichen Grundlagen. Daraus kann für jedes Grundstück die Information zu den ÖREB erstellt werden. Die Information wird als PDF angezeigt und lässt sich über MapFish Print drucken.
 
 ==== ÖREB-Server Print
-Der ÖREB-Server Print (pyramid_oereb_mfp) ist eine Erweiterung des ÖREB-Servers (pyramid_oereb), die es ermöglicht, statische Auszüge im PDF-Format zu generieren. Diese Implementierung basiert auf MapFish-Print und erfordert die Installation von MapFish-Print, Java und das Hinzufügen von Schriftarten für den Druck.
+Der ÖREB-Server Print (_pyramid_oereb_mfp_) ist eine Erweiterung des ÖREB-Servers (pyramid_oereb), die es ermöglicht, statische Auszüge im PDF-Format zu generieren. Diese Implementierung basiert auf _MapFish-Print_ und erfordert die Installation von MapFish-Print, Java und das Hinzufügen von Schriftarten für den Druck.
 
 ==== ÖREB-Datenbank
-In der geoportal PostGIS Datenbank werden die Schemata der jeweiligen ÖREB-Themen geführt. 
-Die Datenstruktur entspricht einem mit ili2pg angelegten Schema und Tabellen. Für die Bereitstellung der Geowebdienste (WMS, WFS) werden zusätzlche Views angelegt.
+In der PostGIS-Datenbank _geoportal_ werden die Schemata der jeweiligen ÖREB-Themen geführt. 
+Die Datenstruktur entspricht einem mit _ili2pg_ angelegten Schema und Tabellen. Für die Bereitstellung der Geowebdienste (WMS, WFS) werden zusätzlche Views angelegt.
 
 ==== WebGIS (GeoMapFish)
-Im Kanton Schwyz wurde der ÖREB-Kataster ins WebGIS eingebaut. Damit dient GeoMapFish zusammen mit einem graphikfähigen Browser als Benutzeroberfläche und Datenviewer. Sämtliche Daten aus dem WebGIS können zusammen mit den ÖREB-Daten dargestellt werden.
+Im Kanton Schwyz wurde der ÖREB-Kataster ins WebGIS eingebaut. Damit dient _GeoMapFish_ zusammen mit einem graphikfähigen Browser als Benutzeroberfläche und Datenviewer. Sämtliche Daten aus dem WebGIS können zusammen mit den ÖREB-Daten dargestellt werden. Sie sind jedoch nicht Teil eines ÖREB-Auszugs.
 
 ==== Geodaten
-ÖREB existieren auf den verschiedenen föderalen Ebenen (Bund, Kanton, Gemeinden). Die Geodaten dazu müssen je nach Ebene unterschiedlich behandelt werden:
+ÖREB existieren auf den verschiedenen föderalen Ebenen (Bund, Kanton, Gemeinden). Die Geodaten dazu müssen je nach föderaler Ebene unterschiedlich behandelt werden:
 
-* Geodaten vom Bund können zentral über data.geo.admin.ch bezogen und ins System eingebunden werden.  
-* Geodaten vom Kanton werden von der zuständigen kantonalen Fachstelle aufbereitet. Bevor sie publiziert werden, müssen die Daten auf Vollständigkeit und Konsistenz geprüft werden. data.geo.sz.ch
-* Geodaten der Gemeinden müssen erst zusammengeführt und bereinigt werden. Man spricht von Datenintegration. Allfällige Lücken oder Überlagerungen in den Daten müssen behoben werden. Dies kann in der Regel nicht vollständig zentral erfolgen. data.geo.sz.ch
+* Geodaten vom Bund können zentral über http://data.geo.admin.ch bezogen und ins System eingebunden werden.  
+* Geodaten vom Kanton werden von der zuständigen kantonalen Fachstelle aufbereitet. Bevor sie publiziert werden, müssen die Daten auf Vollständigkeit und Konsistenz geprüft werden: http://data.geo.sz.ch.
+* Geodaten der Gemeinden müssen erst zusammengeführt und bereinigt werden. Man spricht von Datenintegration. Allfällige Lücken oder Überlagerungen in den Daten müssen behoben werden. Dies kann in der Regel nicht vollständig zentral erfolgen: http://data.geo.sz.ch.
 
 == Durchführung und Überwachung des Betriebs
 === Entwicklungs-, Test- und Produktionssystem
@@ -88,13 +88,13 @@ Geplante Arbeiten an den Systemen werden mittels eines Trello-Boards überwacht.
 Änderungen und Neuerungen im produktiven System werden über einen Newsletter per E-Mail interessierten Dritten mitgeteilt.
 
 === Betriebsüberwachung mit Monitoring, Alarmierung 
-Die Überwachung des Betriebs des ÖREB-Katasters geschieht auf unterschiedlichen Stufen. Auf tiefster Stufe, die Kontrolle der Funktionstüchtigkeit der Webserver, erfolgt durch Monitoringprozesse bei Camptocamp. Die Überwachung der Integrationsprozesse erfolgt durch die katasterverantwortliche Stelle. Sie kontrolliert die Jobs, und wird informiert, wenn Bundesdaten aktualisiert wurden. Allfällige Probleme beim Zugreifen durch Dritte auf den ÖREB-Kataster bzw. die KGDI bei internem gut durchlaufenden Betrieb werden von Dritten z.B. über die Service-Hotline oder per E-Mail gemeldet und schnellstmöglich bearbeitet.
+Die Überwachung des Betriebs des ÖREB-Katasters geschieht auf unterschiedlichen Stufen. Auf tiefster Stufe, die Kontrolle der Funktionstüchtigkeit der Webserver, erfolgt durch Monitoringprozesse bei der Firma _Camptocamp_. Die Überwachung der Integrationsprozesse erfolgt durch die KVS. Sie kontrolliert die Jobs, und wird informiert, wenn Bundesdaten aktualisiert wurden. Allfällige Probleme beim Zugreifen durch Dritte auf den ÖREB-Kataster bzw. die kantonalen Geodateninfrastruktur (KGDI) bei internem gut durchlaufenden Betrieb werden von Dritten z. B. über die Service-Hotline oder per E-Mail gemeldet und schnellstmöglich bearbeitet.
 
 === Datensicherung
-Die Geobasisdaten der kantonalen ÖREB-Themen sind in der kantonalen Geodateninfrastruktur (GDI) abgelegt. Die Datenintegration in den ÖREB-Kataster erfolgt mittels dem Rahmenmodell. Di Dadurch werden die Daten jeweils täglich durch das Amt für Informatik (AFI) SZ gesichert. Die Sicherung der Daten für den Kataster der Belasteten Standorte erfolgt durch die Firma geops. Die Inhalte des Rechtsinformationssystems ÖREBlex werden durch die Firma Sitrox AG, Zürich, gewartet und gesichert. Die Infrastruktur des WebGIS SZ wird durch die Firma Camptocamp gewartet und gesichert.
+Die Geobasisdaten der kantonalen ÖREB-Themen sind in der KGDI abgelegt. Die Datenintegration in den ÖREB-Kataster erfolgt mittels dem Rahmenmodell. Dadurch werden die Daten jeweils täglich durch das Amt für Informatik (AFI) SZ gesichert. Die Sicherung der Daten für den Kataster der Belasteten Standorte erfolgt durch die Firma _geops_. Die Inhalte des Rechtsinformationssystems ÖREBlex werden durch die Firma _Sitrox_ AG, Zürich, gewartet und gesichert. Die Infrastruktur des WebGIS SZ wird durch Camptocamp gewartet und gesichert.
 
 === Kontrollen zum Datenschutz 
-Die Geobasisdaten der ÖREB-Themen enthalten nicht-sensitive Sachdaten und unterliegen deshalb nicht dem Datenschutz. Die Rechtsvorschriften werden ohne sensible Daten publiziert. Die entsprechende Bearbeitung der Rechtsvorschriften liegt in der Verantwortung der zuständigen Stelle (§ 4 Abs. 1 KÖREBKV). Der Grundstücksbeschrieb der amtlichen Vermessung enthält die öffentlichen Eigentümerdaten. Diese Daten werden nur im dynamischen Auszug angezeigt. Der Datenschützer des Kantons Schwyz wurde bei der Erstellung des ÖREB-Katasters einbezogen.
+Die Geobasisdaten der ÖREB-Themen enthalten nicht-sensitive Sachdaten und unterliegen deshalb keinen Einschränkungen durch den Datenschutz. Die Rechtsvorschriften werden ohne sensible Daten publiziert. Die entsprechende Bearbeitung der Rechtsvorschriften liegt in der Verantwortung der zuständigen Stelle (§ 4 Abs. 1 KÖREBKV). Der Grundstücksbeschrieb der amtlichen Vermessung enthält die öffentlichen Eigentümerdaten des Grundbuchs. Diese Daten können nur im dynamischen Auszug über einen Link aufgerufen werden. Der Datenschützer des Kantons Schwyz wurde bei der Erstellung des ÖREB-Katasters einbezogen.
 
 === Statistiken, Kennzahlen, Messgrössen
 Die Zugriffe auf den ÖREB-Kataster werden geloggt und können in Abhängigkeit von Zeit und Thema mit Hilfe von Python, FME und Excel ausgewertet werden. Diese Zahlen sind auch die Kennzahlen für den jährlichen kantonalen Bericht und dienen der Katasteraufsicht und dem Kantonsrat als Berichtsinstrument.
@@ -107,20 +107,20 @@ Fehler in den Geobasisdaten und Rechtsvorschriften, welche der katasteverantwort
 Während den Bürozeiten gibt es eine ordentliche Wiederherstellung (Reboot) in wenigen Minuten nach Eingang der Meldung. Der Reboot des Datenbank- und des Applikationsdienstes wird durch die Mitarbeiter des AGI durchgeführt.
 
 === Ausfall und Wiederherstellung Dienste 
-In einem solchen Fall läuft der interne Standardprozess ab. Mitarbeiter des AGI werden die Fehlerursache eruieren und das Problem beheben. Bei Ausfall von Diensten mit Zugriff auf die ÖREB-Daten des Bundes, ist die Behebung der Ursache beim Bund abzuwarten.
+In einem solchen Fall läuft der interne Standardprozess zur Wiederherstellung des WebGIS ab. Mitarbeiter des AGI werden die Fehlerursache eruieren und das Problem beheben. Bei Ausfall von Diensten mit Zugriff auf die ÖREB-Daten des Bundes, ist die Behebung der Ursache beim Bund abzuwarten.
 
 === Ablauf für die Wiederinbetriebnahme
 Vor der Inbetriebnahme eines unterbrochenen oder ausgefallenen Betriebes werden die Inhalte und Funktionalitäten des WebGIS SZ auf einer Testumgebung geprüft. Bei den Diensten zu den Bundesdaten wird deren erneute Verfügbarkeit beim Bund nachgefragt.
 
 === Qualitätssicherung nach Wiederinbetriebnahme 
-Die katasterverantwortliche Stelle führt Stichproben durch, welche die korrekte Wiederinbetriebnahme sicherstellt. Bei den Diensten zu den Bundesdaten geht man davon aus, dass die Dienste und Bundesdaten durch den Bund geprüft werden.
+Die KVS führt Stichproben durch, welche die korrekte Wiederinbetriebnahme sicherstellt. Bei den Diensten zu den Bundesdaten geht man davon aus, dass die Dienste und Bundesdaten durch den Bund geprüft werden.
 
 === Erstellung und Wiedereinspielung Backups
-Je nach Ereignis werden einzelne Datensätze, Themen oder die ganze Datenbank zurückgespielt. Die Backups der ÖREB-Daten, abgelegt auf dem Laufwerk Q der kantonalen Verwaltung werden durch das Amt für Informatik täglich und wöchentlich durchgeführt. Die Rechtsvorschriften im ÖREBlex sind durch die Firma Sitrox und die Funktionalitäten des WebGIS durch die Firma CamptoCamp betreut und gesichert. Das Einspielen eines Backups geschieht nach den Vorgaben interner Abläufe. Mitarbeiter des AGI treten dabei in Kontakt mit den Verantwortlichen der Infrastruktur und beauftragen diese mit dem Einspielen eines Backups.
+Je nach Ereignis werden einzelne Datensätze, Themen oder die ganze Datenbank zurückgespielt. Die Backups der ÖREB-Daten, abgelegt auf dem Laufwerk Q der kantonalen Verwaltung, werden durch das Amt für Informatik täglich und wöchentlich durchgeführt. Die Rechtsvorschriften im ÖREBlex sind durch die Firma Sitrox und die Funktionalitäten des WebGIS durch die Firma CamptoCamp betreut und gesichert. Das Einspielen eines Backups geschieht nach den Vorgaben interner Abläufe. Mitarbeiter des AGI treten dabei in Kontakt mit den Verantwortlichen der Infrastruktur und beauftragen diese mit dem Einspielen eines Backups.
 
 == Datenverarbeitung
 === Erstaufnahme der ÖREB-Katasterdaten
-.Erstaufnahme der ÖREB-Katasterdaten
+.Erstaufnahme der ÖREB-Katasterdaten.
 image::../img/erstaufnahme_oereb-katasterdaten.jpg[scaledwidth=100%,align="center"]
 
 . Die KVS nimmt mit der zuständigen Amtstelle Kontakt auf. Es geht darum abzuklären, in welcher Form die Daten vorliegen und wie sie allenfalls erhoben werden müssen.
@@ -131,7 +131,7 @@ Die zuständige Stelle bestätigt bei der Datenabgabe der KVS, dass die Daten ge
 . Bevor die Daten auf das Produktivsystem übertragen und öffentlich aufgeschaltet werden, werden sie nochmals geprüft. Unvollständige oder fehlerhafte Daten werden nicht aufgeschaltet. Mit der Aufschaltung werden die Geometadaten aktualisiert.
 
 === Datenverwaltung
-Die Verwaltung der Geodaten erfolgt innerhalb der Struktur der kantonalen Geodateninfrastruktur. Die Rechtsdokumente werden mit OEREBlex nur über Links verknüpft. Verwaltet werden sie im Projekt LexFind.
+Die Verwaltung der Geodaten erfolgt innerhalb der Struktur der kantonalen Geodateninfrastruktur. Die Rechtsdokumente werden mit OEREBlex nur über Links verknüpft. Verwaltet werden sie in LexFind.
 
 === Nachführung der Datenmodelle
 Eine Nachführung des Datenmodells wird etwa bei der Änderung des Rahmenmodells des Bundes notwendig. In diesem Falls unterstützt die KVS bei der Transformation der bestehenden Daten ins neue Datenmodell. Nach Möglichkeit werden automatisierte Prozesse, z. B. mit FME verwendet.
@@ -144,8 +144,9 @@ Die neue Darstellung wird zuerst auf dem Testsystem geprüft. Nur bei erfolgreic
 === Nachführung der ÖREB-Daten im Allgemeinen
 ==== Generelles Vorgehen
 
-.gerelles Vorgehen beim Nachführungsprozess
+.Gerelles Vorgehen beim Nachführungsprozess.
 image::../img/nachfuehrung_generelles_vorgehen.jpg[scaledwidth=100%,align="center"]
+
 Eine Nachführung der Geodaten kann ereignisbezogen ausgelöst werden oder periodisch erfolgen. In beiden Fällen löst die zuständige Amtsstelle die Nachführung aus. Sie liefert der KVS den Änderungsdatensatz. Die KVS nimmt die Daten entgegen, registriert und prüft sie. Geprüft werden Datenkonsistenz und Modellkonformität. Wenn die Daten Fehler aufweisen, müssen sie durch die zuständige Stelle bereinigt werden.
 
 Die geänderten Geodaten werden in jedem Fall vor der Veröffentlichung auf dem Testsystem nochmals geprüft. Die Geometadaten werden für die Publikation vorbereitet.
@@ -201,6 +202,8 @@ Die Themen vom Bund werden als Dienst in den ÖREB-Kataster eingebunden. Sofern 
 
 .Nachführungsprozess im Miro Board dokumentiert:
 https://miro.com/app/board/o9J_lu8t5yE=/?moveToWidget=3458764518174132813&cot=14[Miro-Board: Nachführungsprozess]
+
+Seit der dritten Revision des kant. Planungs- und Baugesetztes vom 14. Mai 1087 (PBG, SRSZ 400.100) kann der Regierungsrat bestimmen, dass die digitalen Daten rechtskräftig sind. Dies erfolgt gemeindeweise mit der Überarbeitung der Nutzungsplanung. Bei der Nachführung ist zu prüfen, ob sich die Rechtskraft der Daten geändert hat.
 
 ==== Planungszonen (ID 76)
 * Planungszonen kantonal (Siedlung) (ID 76A)
@@ -265,11 +268,11 @@ Der Bund unterstützt während der Einführung des ÖREB-Katasters mit einer Sup
 * Schwergewichtsprojekte
 
 === Kantonal
-Die katasterverantwortliche Stelle, das AGI, unterstützt die betroffenen Fachstellen aktiv bei der Umsetzung des Datenmodells und der Erhebung der Daten und Rechtsvorschriften.
+Die katasterverantwortliche Stelle, also das AGI, unterstützt die betroffenen Fachstellen aktiv bei der Umsetzung des Datenmodells und der Erhebung der Daten und Rechtsvorschriften.
 
 == Changemanagement
 === National 
-Änderungen im Aufbau des ÖREB-Katasters – z.B. Anpassungen im Rahmenmodell, Ergänzungen in Weisungen, Anpassung ÖREBKV, usw. – werden durch den Bund initialisiert. Bei geänderten Weisungen werden die Kantone durch den Bund über deren Inkrafttreten informiert. Neue ÖREB-Themen und Änderungen in der ÖREBKV werden zuerst durch paritätisch zusammengestellte Arbeitsgruppen (abhängig vom Thema und beteiligten Stellen) erarbeitet. Danach erhalten die Kantone die Unterlagen zur Stellungnahme.
+Änderungen im Aufbau des ÖREB-Katasters – z. B. Anpassungen im Rahmenmodell, Ergänzungen in Weisungen, Anpassung ÖREBKV, usw. – werden durch den Bund initialisiert. Bei geänderten Weisungen werden die Kantone durch den Bund über deren Inkrafttreten informiert. Neue ÖREB-Themen und Änderungen in der ÖREBKV werden zuerst durch paritätisch zusammengestellte Arbeitsgruppen (abhängig vom Thema und beteiligten Stellen) erarbeitet. Danach erhalten die Kantone die Unterlagen zur Stellungnahme.
 
 === Kantonal
 Die beteiligten Fachstellen melden ihre Erfahrungen bei der Umsetzung und Bedürfnisse dem AGI. Optimierungen im Datenmodell werden so rasch als möglich umgesetzt, insbesondere bei den Themen den kantonalen zuständigen Stellen. Die Erfahrungen der kantonalen Stellen für die weiteren ÖREB-Themen werden gesammelt und dann in definitive Richtlinien umgesetzt.
