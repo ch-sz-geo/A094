@@ -34,21 +34,12 @@ Marleen Schulze (mas) AGI
 h| Version h| Datum h| Autor h| Bemerkung
 | 0.1 | 2021-02-11 | td | Grobstruktur und Initialfassung 
 | 0.2 | 2022-10-27 | td, mas | Entwurf für Abnahme 
+| 1.0 | 2023-04-05 | td, mas | Finalisierung für Abnahme
+| 1.1 | 2024-04-18 | mas | Formatänderung (ASCII-Doc)
+| 1.2 | 2024-05-16 | td, mas | Anpassung Prozesse, Aktualisierung Architektur
 |=======
 ====
 
-.Referenzierte Dokumente
-[%collapsible]
-====
-[cols="10%, 70%, 10%, 10%"]
-|=======
-h| Nr. h| Titel h| Autor(en) h| Version
-| [01] | test | test | 2010-01-01
-| [02] | test | test | 2010-01-01
-| [03] | test | test | 2010-01-01
-| [04] | test | test | 2010-01-01
-|=======
-====
 
 ifdef::backend-pdf[]
 <<<
