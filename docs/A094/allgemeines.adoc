@@ -29,8 +29,8 @@ Der ÖREB-Kataster ist ein gemeinsames Projekt von Bund und Kantonen.
 Durch die Swisstopo wurden zudem verschiedene Weisungen erstellt, damit der ÖREB-Kataster schweizweit einheitlich erscheint. Die aktuellen Weisungen sind auf der Webseite https://www.cadastre-manual.admin.ch/de/oereb-weisungen-oereb-kataster[] abrufbar:
 
 .Strategisch
-* «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2020–2023» gültig ab 1. Januar 2020 für vier Jahre. 
-* «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2020–2023: Massnamenplan» gültig ab 1. Januar 2020 für vier Jahre. +
+* «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2024–2027» gültig ab 1. Januar 2024 für vier Jahre. 
+* «Strategie für den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) für die Jahre 2024–2027: Massnamenplan» gültig ab 1. Januar 2024 für vier Jahre. +
 
 .Inhaltlich und technisch
 * «ÖREB-Kataster: Rechtsvorschriften, gesetzliche Grundlagen und Zusatzinformationen» vom 1. August 2021 (Stand am 15. März 2023). 
@@ -124,7 +124,7 @@ Je nach Ereignis werden einzelne Datensätze, Themen oder die ganze Datenbank zu
 image::../img/erstaufnahme_oereb-katasterdaten.jpg[scaledwidth=100%,align="center"]
 
 . Die KVS nimmt mit der zuständigen Amtstelle Kontakt auf. Es geht darum abzuklären, in welcher Form die Daten vorliegen und wie sie allenfalls erhoben werden müssen.
-. Die KVS legt zusammen mit der zuständigen Amtsstelle das Datenmodell fest. Das Modell basiert auf dem aktuellen MGDM und dem ÖREB-Datenmodell. Weiter legt die KVS zusammen mit der zuständigen Amtsstelle fest, wie die Daten erhoben, ins richtige Datenmodell transformiert und validiert werden können. Zudem wird gemeinsam ein Darstellungsmodell für die Geodaten festgelegt, das den ÖREB-Weisungen der Swisstopo entspricht. 
+. Die KVS legt zusammen mit der zuständigen Amtsstelle das Datenmodell fest. Das Modell basiert auf dem aktuellen MGDM und dem ÖREB-Rahmenmodell. Weiter legt die KVS zusammen mit der zuständigen Amtsstelle fest, wie die Daten erhoben, ins richtige Datenmodell transformiert und validiert werden können. Zudem wird gemeinsam ein Darstellungsmodell für die Geodaten festgelegt, das den ÖREB-Weisungen der Swisstopo entspricht. 
 . Die Geodaten und die Rechtsvorschriften müssen unter Federführung der zuständigen Amtsstelle zusammengetragen werden. Die KVS begleitet die zuständige Amtsstelle bei dieser Arbeit. Die Daten müssen auf Korrektheit und Vollständigkeit geprüft werden.
 . Die Geodaten werden im Testsystem aufgesetzt und nochmals geprüft. Die Geometadaten werden vorbereitet.  
 Die zuständige Stelle bestätigt bei der Datenabgabe der KVS, dass die Daten gemäss dem gesetzlich vorgeschriebenen Verfahren beschlossen und genehmigt wurden und dass sie in Kraft sind. Wenn keine rechtsverbindlichen Daten existieren, werden Daten in den ÖREB-Kataster aufgenommen, die auf einem rechtsverbindlichen Plan beruhen. Die KVS legt in diesem Fall mit der zuständigen Stelle fest, wie die Rechtsverbindlichkeit der Daten erzeugt werden kann.
@@ -203,7 +203,7 @@ Die Themen vom Bund werden als Dienst in den ÖREB-Kataster eingebunden. Sofern 
 .Nachführungsprozess im Miro Board dokumentiert:
 https://miro.com/app/board/o9J_lu8t5yE=/?moveToWidget=3458764518174132813&cot=14[Miro-Board: Nachführungsprozess]
 
-Seit der dritten Revision des kant. Planungs- und Baugesetztes vom 14. Mai 1087 (PBG, SRSZ 400.100) kann der Regierungsrat bestimmen, dass die digitalen Daten rechtskräftig sind. Dies erfolgt gemeindeweise mit der Überarbeitung der Nutzungsplanung. Bei der Nachführung ist zu prüfen, ob sich die Rechtskraft der Daten geändert hat.
+Seit der dritten Revision des kant. Planungs- und Baugesetzes vom 14. Mai 1987 (PBG, SRSZ 400.100) kann der Regierungsrat bestimmen, dass die digitalen Daten rechtskräftig sind. Dies erfolgt gemeindeweise mit der Überarbeitung der Nutzungsplanung. Bei der Nachführung ist zu prüfen, ob sich die Rechtskraft der Daten geändert hat.
 
 ==== Planungszonen (ID 76)
 * Planungszonen kantonal (Siedlung) (ID 76A)
@@ -260,9 +260,9 @@ Die zuständige Stelle kontaktiert die KVS, falls eine Änderung es notwendig ma
 
 == Supportorganisation 
 === National
-Der Bund unterstützt während der Einführung des ÖREB-Katasters mit einer Supportorganisation die Koordination und den Informationsaustausch zwischen den Kantonen und dem Bund.
+Der Bund unterstützt während der Einführung, Weiterentwicklung und des ÖREB-Katasters mit einer Supportorganisation die Koordination und den Informationsaustausch zwischen den Kantonen und dem Bund.
 
-* Jährliche Informationstagungen „ÖREB-Kataster“ 
+* Informationstagungen „ÖREB-Kataster“ 
 * Arbeitsgruppen 
 * Supportgruppen 
 * Schwergewichtsprojekte
@@ -272,7 +272,7 @@ Die katasterverantwortliche Stelle, also das AGI, unterstützt die betroffenen F
 
 == Changemanagement
 === National 
-Änderungen im Aufbau des ÖREB-Katasters – z. B. Anpassungen im Rahmenmodell, Ergänzungen in Weisungen, Anpassung ÖREBKV, usw. – werden durch den Bund initialisiert. Bei geänderten Weisungen werden die Kantone durch den Bund über deren Inkrafttreten informiert. Neue ÖREB-Themen und Änderungen in der ÖREBKV werden zuerst durch paritätisch zusammengestellte Arbeitsgruppen (abhängig vom Thema und beteiligten Stellen) erarbeitet. Danach erhalten die Kantone die Unterlagen zur Stellungnahme.
+Änderungen im Aufbau des ÖREB-Katasters – z. B. Anpassungen im Rahmenmodell, Ergänzungen in Weisungen, Anpassung ÖREBKV, usw. – werden durch den Bund initialisiert. Bei geänderten Weisungen werden die Kantone durch den Bund über deren Inkrafttreten informiert. Neue ÖREB-Themen und Änderungen in der ÖREBKV werden zuerst durch Arbeitsgruppen (abhängig vom Thema und beteiligten Stellen) erarbeitet. Danach erhalten die Kantone die Unterlagen zur Stellungnahme.
 
 === Kantonal
 Die beteiligten Fachstellen melden ihre Erfahrungen bei der Umsetzung und Bedürfnisse dem AGI. Optimierungen im Datenmodell werden so rasch als möglich umgesetzt, insbesondere bei den Themen den kantonalen zuständigen Stellen. Die Erfahrungen der kantonalen Stellen für die weiteren ÖREB-Themen werden gesammelt und dann in definitive Richtlinien umgesetzt.
