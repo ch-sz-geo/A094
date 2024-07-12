@@ -260,12 +260,12 @@ Die zuständige Stelle kontaktiert die KVS, falls eine Änderung es notwendig ma
 
 == Supportorganisation 
 === National
-Der Bund unterstützt während der Einführung, Weiterentwicklung und des ÖREB-Katasters mit einer Supportorganisation die Koordination und den Informationsaustausch zwischen den Kantonen und dem Bund.
+Der Bund unterstützt während der Einführung, Weiterentwicklung und Betrieb des ÖREB-Katasters mit einer Supportorganisation die Koordination und den Informationsaustausch zwischen den Kantonen und dem Bund.
 
 * Informationstagungen „ÖREB-Kataster“ 
 * Arbeitsgruppen 
 * Supportgruppen 
-* Schwergewichtsprojekte
+* Schwergewichtsprojekten
 
 === Kantonal
 Die katasterverantwortliche Stelle, also das AGI, unterstützt die betroffenen Fachstellen aktiv bei der Umsetzung des Datenmodells und der Erhebung der Daten und Rechtsvorschriften.
