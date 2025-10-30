@@ -11,6 +11,7 @@ on:
       - 'themes/*'
       - 'docs/modelldokumentation/*'
       - 'docs/erfassungsrichtlinien/*'
+      - 'docs/A094/*'
       - 'docs/img/*'
       - 'index.html'
   pull_request:
