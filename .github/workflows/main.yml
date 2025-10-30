@@ -47,13 +47,13 @@ jobs:
         run: asciidoctor --version
       - name: create file
         run: |
-          asciidoctor -o ./docs/oereb-handbuch.html ./docs/A094/oereb-handbuch.adoc
+          asciidoctor -o ./oereb-handbuch.html ./docs/A094/oereb-handbuch.adoc
           #asciidoctor -o ./docs/erfassungsrichtlinien.html ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: install Asciidoc Pdf
         run: gem install asciidoctor-pdf
       - name: create pdfs
         run: |
-          asciidoctor-pdf --theme ./themes/pdfTheme.yml -o ./docs/oereb-handbuch.pdf ./docs/A094/oereb-handbuch.adoc
+          asciidoctor-pdf --theme ./themes/pdfTheme.yml -o ./oereb-handbuch.pdf ./docs/A094/oereb-handbuch.adoc
           #asciidoctor-pdf --theme ./themes/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: Commit HTML
         run: |
