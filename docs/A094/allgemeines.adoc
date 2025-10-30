@@ -5,7 +5,7 @@ https://map.geo.sz.ch/oereb_client[ÖREB-Client für den Kanton Schwyz]
 
 https://map.geo.sz.ch/s/tR6Lk5[WebGIS mit den ÖREB-Themen im Kanton Schwyz]
 
-. wird für den ÖREB-Kataster dargelegt:
+.  für den ÖREB-Kataster dargelegt:
 * auf welchen Rechtsgrundlagen er beruht; 
 * wer dafür zuständig ist; 
 * wie er technisch aufgebaut ist; 
