@@ -3,13 +3,10 @@ In diesem Benutzerhandbuch wird dokumentiert, wie der Kataster der öffentlich-r
 
 https://map.geo.sz.ch/s/tR6Lk5[WebGIS mit den ÖREB-Themen im Kanton Schwyz]
 
-<<<<<<< HEAD
 https://map.geo.sz.ch/oereb_client[ÖREB-Client für den Kanton Schwyz]
 
 .Es wird für den ÖREB-Kataster dargelegt:
-=======
 . Es wird für den ÖREB-Kataster dargelegt:
->>>>>>> 8a84300ad34d2edb6bf43dd46ef3d3f2694c3ae4
 * auf welchen Rechtsgrundlagen er beruht; 
 * wer dafür zuständig ist; 
 * wie er technisch aufgebaut ist; 
