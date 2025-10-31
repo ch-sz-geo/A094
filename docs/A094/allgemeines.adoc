@@ -1,9 +1,9 @@
 == Vorwort 
 In diesem Benutzerhandbuch wird dokumentiert, wie der Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB-Kataster) im Kanton Schwyz aufgebaut ist.
 
-https://map.geo.sz.ch/oereb_client[ÖREB-Client für den Kanton Schwyz]
-
 https://map.geo.sz.ch/s/tR6Lk5[WebGIS mit den ÖREB-Themen im Kanton Schwyz]
+
+https://map.geo.sz.ch/oereb_client[ÖREB-Client für den Kanton Schwyz]
 
 .Es wird für den ÖREB-Kataster dargelegt:
 * auf welchen Rechtsgrundlagen er beruht; 
@@ -37,9 +37,10 @@ Durch die Swisstopo wurden zudem verschiedene Weisungen erstellt, damit der ÖRE
 .Inhaltlich und technisch
 * «ÖREB-Kataster: Rechtsvorschriften, gesetzliche Grundlagen und Zusatzinformationen» vom 1. August 2021 (Stand am 15. März 2023). 
 * «ÖREB-Kataster: Inhalt und Darstellung des statischen Auszugs» vom 1. November 2017 (Stand am 25. August 2022). 
-* «ÖREB-Kataster: DATA-Extract» vom 1. November 2017 (Stand am 25. August 2022). 
+* «ÖREB-Kataster: DATA-Extract» vom 1. November 2017 (Stand am 14. August 2022). 
 * «ÖREB-Kataster: ÖREB-Webservice (Aufruf eines Auszugs) vom 1. November 2017 (Stand am 25. August 2022). 
-* «Rahmenmodell für den ÖREB-Kataster: Erläuterungen für die Umsetzung» vom 1. Februar 2011 (Stand am 25. August 2022). 
+* «Rahmenmodell für den ÖREB-Kataster: Erläuterungen für die Umsetzung» vom 1. Februar 2011 (Stand am 25. August 2022).
+* https://www.cadastre-manual.admin.ch/de/oereb-weisungen-oereb-kataster[weitere Weisungen zum ÖREB-Kataster] 
 
 === Katasterverantwortliche Stelle
 Das Amt für Geoinformation (AGI) wurde vom Regierungsrat zur katasterverantwortlichen Stelle (KVS) bestimmt (§ 3 KÖREBKV). Zu den Aufgaben der KVS gehören die Integration der Daten in den Kataster, welche von den zuständigen Stellen an das AGI weitergegeben werden. Zudem werden die gesetzlichen Grundlagen mit den Geodaten im Auftrag der zuständigen Stelle verknüpft. Die Inhalte des Katasters sind als statischer und dynamischer Auszug im WebGIS abrufbar.
@@ -72,10 +73,10 @@ In der PostGIS-Datenbank _geoportal_ werden die Schemata der jeweiligen ÖREB-Th
 Die Datenstruktur entspricht einem mit _ili2pg_ angelegten Schema und Tabellen. Für die Bereitstellung der Geowebdienste (WMS, WFS) werden zusätzlche Views angelegt.
 
 ==== ÖREB-Client
-Mit dem ÖREB-Client lassen sich sämtliche öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB) eines Grundstücks abfragen. Die Anwendung visualisiert die einzelnen Beschränkungen auf einer Karte, zeigt in der Legende deren prozentualen Anteil an der Gesamtfläche und ermöglicht es, eine vollständige Übersicht aller Beschränkungen als PDF-Dokument zu erstellen.
+Mit dem https://map.geo.sz.ch/oereb_client[ÖREB-Client] lassen sich sämtliche öffentlich-rechtlichen Eigentumsbeschränkungen (ÖREB) eines Grundstücks abfragen. Die Anwendung visualisiert die einzelnen Beschränkungen auf einer Karte, zeigt in der Legende deren prozentualen Anteil an der Gesamtfläche und ermöglicht es, eine vollständige Übersicht aller Beschränkungen als PDF-Dokument zu erstellen.
 
 ==== WebGIS (GeoMapFish)
-Im Kanton Schwyz wurde der ÖREB-Kataster zusätzlich ins WebGIS eingebaut. Damit dient _GeoMapFish_ zusammen mit einem graphikfähigen Browser als Benutzeroberfläche und Datenviewer. Sämtliche Daten aus dem WebGIS können zusammen mit den ÖREB-Daten dargestellt werden. Sie sind jedoch nicht Teil eines ÖREB-Auszugs. Im Feature Report des Grundstücks befinden sich die Links zum PDF-Auszug und zum dynamischen Auszug des ÖREB-Katasters.
+Im Kanton Schwyz wurde der ÖREB-Kataster zusätzlich ins https://map.geo.sz.ch/s/tR6Lk5[WebGIS] eingebaut. Damit dient _GeoMapFish_ zusammen mit einem graphikfähigen Browser als Benutzeroberfläche und Datenviewer. Sämtliche Daten aus dem WebGIS können zusammen mit den ÖREB-Daten dargestellt werden. Sie sind jedoch nicht Teil eines ÖREB-Auszugs. Im Feature Report des Grundstücks befinden sich die Links zum PDF-Auszug und zum dynamischen Auszug des ÖREB-Katasters.
 
 ==== Geodaten
 ÖREB existieren auf den verschiedenen föderalen Ebenen (Bund, Kanton, Gemeinden). Die Geodaten dazu müssen je nach föderaler Ebene unterschiedlich behandelt werden:
